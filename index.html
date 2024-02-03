@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Home Club - Join the Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to The Home Club</h1>
+        <p>Live like you Own. Move like you Rent.</p>
+        <form id="interestForm">
+            <div class="form-group">
+                <label>Status:</label>
+                <div class="form-options">
+                    <input type="radio" name="status" value="owner" id="owner"> <label for="owner">I own a home</label>
+                    <input type="radio" name="status" value="renter" id="renter"> <label for="renter">I rent a home</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city">Closest Major City:</label>
+                <input type="text" id="city" name="city" autocomplete="off">
+                <div id="suggestion-container"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+        <div id="usMap">
+            <span id="mapText">Live Interest Map Coming Soon...</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
